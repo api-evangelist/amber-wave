@@ -1,8 +1,28 @@
 aid: amber-wave
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amber-wave.png
 name: Amber Wave
-description: Amber Wave is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  AmberWave, Inc. (formerly AmberWave Systems Corporation) is a Lowell,
+  Massachusetts deep-technology company that researches, develops, and licenses
+  semiconductor and photovoltaic materials technology. It originated strained-silicon
+  and aspect-ratio-trapping techniques from MIT and Bell Labs research, and today
+  develops Ultra-Thin Silicon (UTSi) flexible solar cells and modules that weigh
+  roughly 90% less than conventional panels, targeting lightweight commercial
+  rooftops, off-grid power, building integration, vehicle, and aerospace
+  applications. AmberWave is a Battery Ventures portfolio company. It publishes a
+  corporate website but exposes no public API, developer portal, SDKs, or technical
+  documentation surface, so there are no machine-readable API artifacts to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/amber-wave/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +30,31 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
+x-api-surface-reason: hardware/materials company (semiconductor + photovoltaics); no public API, developer portal, or docs found (2026-07-17)
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Semiconductor
+- Solar
+- Photovoltaics
+- Materials Science
+- Clean Energy
+- Hardware
+- Deep Tech
 apis: []
+common:
+- type: Website
+  url: https://www.amberwave.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
